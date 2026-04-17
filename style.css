@@ -74,6 +74,11 @@ nav a:hover {
     letter-spacing: 1px;
 }
 
+nav a.active {
+    color: #f5b041;
+    font-weight: bold;
+}
+
 /* Main Content */
 .container {
     max-width: 900px;
@@ -417,11 +422,17 @@ footer p {
     }
 
     .order-layout {
-        flex-direction: column;
+        gap: 15px;
+    }
+
+    .order-menu {
+        flex: 1.5;
     }
 
     .cart {
-        position: static;
+        flex: 1;
+        position: sticky;
+        top: 15px;
     }
 
     .menu-item span,
